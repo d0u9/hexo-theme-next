@@ -9,6 +9,12 @@
       </div>
     {% endif %}
 
+    {% if theme.avatar %}
+      <img class="site-author-image" itemprop="image"
+        src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
+        alt="{{ theme.author }}" />
+    {% endif %}
+
     <div class="custom-logo-site-title">
       <a href="{{ config.root }}" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>

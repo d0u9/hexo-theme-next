@@ -45,10 +45,10 @@ cache:
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  small: /images/icons/favicon-16x16.png
+  medium: /images/icons/favicon-32x32.png
+  apple_touch_icon: /images/icons/apple-touch-icon.png
+  safari_pinned_tab: /images/icons/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -60,7 +60,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2015
 
   # Icon between year and copyright info.
   icon:
@@ -118,9 +118,9 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -136,9 +136,9 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -154,14 +154,15 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
+social:
+  GitHub: https://github.com/d0u9 || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
+  Twitter: https://twitter.com/D0u9Su || twitter
+  FB Page: https://www.facebook.com/profile.php?id=100010131587938  || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  StackOverflow: https://stackoverflow.com/users/3824053/douglas-su || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
@@ -193,6 +194,7 @@ links_layout: block
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
 #avatar: /images/avatar.gif
+avatar: /images/avatar.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -207,7 +209,7 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
+creative_commons: by-nc-sa
 #creative_commons:
 
 sidebar:
@@ -455,7 +457,7 @@ math:
 
 # Han Support
 # Dependencies: https://github.com/theme-next/theme-next-han
-han: false
+han: true
 
 # Pangu Support
 # Dependencies: https://github.com/theme-next/theme-next-pangu
